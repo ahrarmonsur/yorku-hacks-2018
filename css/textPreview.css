@@ -35,6 +35,10 @@ h1{
     
 }
 
+input:focus{
+    outline: none;
+}
+
 #circle {
     border-radius: 100px;
     background: white;
