@@ -1,0 +1,30 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Home</title>
+        <h1>This is our title :)</h1>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/homeBody.css">
+        <!-- Bootstrap 3: Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            
+            <script>
+                var notes=['note1','note2','note3'];
+                for (var i=0; i<notes.length(); i++){
+                    jQuery('<div/>', {
+                            id: 'some-id',
+                            class: 'some-class',
+                            title: 'now this div has a title!'
+                        }).appendTo('#mySelector');
+                    }
+                
+            </script>
+            
+        </div>
+    </body>
+    
+    
+</html>
