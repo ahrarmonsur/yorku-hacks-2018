@@ -1,0 +1,22 @@
+{
+  "name": "yorku-hacks-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahrarmonsur/yorku-hacks-2018.git"
+  },
+  "author": "Ahrar Monsur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahrarmonsur/yorku-hacks-2018/issues"
+  },
+  "homepage": "https://github.com/ahrarmonsur/yorku-hacks-2018#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
