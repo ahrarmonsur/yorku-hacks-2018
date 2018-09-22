@@ -6,7 +6,7 @@ body{
 
 .floatingText{
     
-    height: 80%;
+    height: 70%;
     padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
@@ -18,7 +18,10 @@ body{
 }
 
 .buttonBar{
-    
+    display: flex;
+    flex-flow: row;
+    margin: 5%;
+    align-items: center;
     height: 15%;
     
 }
