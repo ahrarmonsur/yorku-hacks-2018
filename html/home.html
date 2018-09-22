@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html>
 <title>Home Page</title>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
 
-<div></div>
-<div></div>
-<div></div>
+<style>
+.hamburger > div {
+    width: 45px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 31%;
+  margin: 1%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 30px;
+}
+</style>
+
+<h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div class="hamburger">
+  	<!-- hamburgur menu -->
+	<div></div>
+	<div></div>
+	<div></div>
+  </div>
+  <div>
+  	<p>Home</p>
+  </div>
+  <div>3</div>  
+</div>
+
+
 
 
 <div class="topnav">
@@ -13,7 +55,7 @@
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
-</div>	
+</div>
 
 </body>
 </html>
