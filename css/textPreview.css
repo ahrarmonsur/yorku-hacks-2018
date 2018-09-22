@@ -1,0 +1,24 @@
+body{
+    
+    background-color: lightblue;
+    
+}
+
+.floatingText{
+    
+    height: 80%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: lightgray;
+    
+}
+
+.buttonBar{
+    
+    height: 15%;
+    
+}
