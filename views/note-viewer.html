@@ -15,16 +15,23 @@
 <body>
 
     <!-- bootstrap navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top text-uppercase">
+    <nav class="navbar navbar-fixed-top text-uppercase">
       <div class="container-fluid">
 
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
-            <a href="home.html">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-          </button>
-          <p class="navbar-text navbar-right">Forever Note</p>
+          <div class="row">
+            <div class="col-xs-2">
+              <a href="home.html">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+            </div>
+            <div class="col-xs-8">            
+              <p class="navbar-text navbar-right text-center">Forever Note</p>
+            </div>
+            <div class="col-xs-2">
+              <p class="navbar-text navbar-right text-center" id="date">DATE</p>
+            </div>
+          </div>
         </div>
 
       </div>
