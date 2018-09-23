@@ -12,4 +12,9 @@
 			});
 		}
 	})
+
+	$(document).ready(function() {
+		$('#cam__button').on('click', function() { $('#cam__form__input').click(); });
+		$('#cam__form__input').on('change', function() { $('#cam__form__submit').click(); });
+	});
 })();
