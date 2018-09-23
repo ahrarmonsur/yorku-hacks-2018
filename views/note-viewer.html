@@ -9,7 +9,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  
+
   <!-- Bootstrap 4: Latest compiled and minified CSS -->
   <link rel="stylesheet" href="../asset/icons/Font-Awesome">
 
@@ -53,14 +53,16 @@
   </div>
   <br>
 
-  <div class="container-fluid" id="note">
-    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  <div class="container-fluid">
+    <p id="text_note"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </p>
+    <img id="img_note" src="../asset/images/stars.jpg"
   </div>
 
   <button id="swap" type="button">swap text and image</button>
 
   <script>
+    window.onload = $("#img_note").hide();
     $("#swap").click(function(){
       console.log("hello world!");
     });
