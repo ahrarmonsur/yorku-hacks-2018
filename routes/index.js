@@ -41,7 +41,7 @@ function relayImageToGoogleVision(req, res, next) {
 			console.log('Transcript saved!');
 		});
 
-		res.end(transcript.fullTextAnnotation.text);
+		res.redirect('/conversion-result?noteID=' + fileName);
 	}).catch(err => {
 		res.end(`Error: ${err}`);
 	});
