@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>E-Notes</title>
-	<script> src="../public/js/gogglevision.js" </script> 
 </head>
 <body>
-
 	<h1>HELLO WORLD!</h1>
-	<form action="https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAEol_ChzyyTUNLjK98UdgLZRZxi0Iq-F0" method="post">
-	<input type="file" id="img" accept="image/*" capture="camera"/>
-	<input type="submit" />
+	<!--<form action="https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAEol_ChzyyTUNLjK98UdgLZRZxi0Iq-F0" method="post">-->
+	<form action="/handwritten" method="POST" enctype="multipart/form-data">
+		<input type="file" name="handwritten_image" accept="image/*" />
+		<input type="submit" value="Upload Image" />
 	</form>
 </body>
 </html>
