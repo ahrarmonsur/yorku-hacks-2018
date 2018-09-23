@@ -19,7 +19,6 @@
 		method: 'GET',
 		url: '/api/v1/notes',
 	}).done(function(res) {
-		console.log(res.notes);
 		$('.notes').empty();
 		if (res.notes && res.notes.length) {
 			$.each( res.notes, function( key, val ) {

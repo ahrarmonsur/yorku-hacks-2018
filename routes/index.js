@@ -28,7 +28,6 @@ router.get('/conversion-result',(req, res, next) => {
 
 function relayImageToGoogleVision(req, res, next) {
 	fileFunctions.uploadImageToGoogleVision(req.file.path).then(results => {
-		console.log(req.file);
 		const fileName = req.file.filename.split('.')[0];
 		const transcript = results[0];
 

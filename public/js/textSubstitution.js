@@ -11,6 +11,10 @@ var substitutionRules = [
 		target: '&',
 		substitution: 'and'
 	},
+	{
+		target: 'TCL',
+		substitution: 'Traditional Chinese Law'
+	},
 ]
 
 function performTextSubstitution(text) {

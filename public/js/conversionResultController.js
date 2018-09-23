@@ -2,8 +2,6 @@
 
 	var urlParams = new URLSearchParams(window.location.search);
 	var noteID = urlParams.get('noteID');
-	console.log(noteID);
-
 
 	$(document).ready(function() {
 		$.ajax({
