@@ -10,25 +10,27 @@ function getAllNotes(req, res) {
 	fs.readdir(fileDir, (err, files) => {
 
 		if (err) {
-			res.status(500).json({error: err});
+			return res.status(500).json({error: err});
 		}
 
-		responseArr = []
-		files.forEach(fileName => {
-			let noteFilepaths = { imagePath: fileDir + fileName };
-			const noteID = fileName.split('.')[0];
-			const transcriptName = noteID + '.json';
+		responseArr = [];
+        if (files) {
+            files.forEach(fileName => {
+                let noteFilepaths = { imagePath: fileDir + fileName };
+                const noteID = fileName.split('.')[0];
+                const transcriptName = noteID + '.json';
 
-			if (fs.existsSync(transcriptDir + transcriptName)) {
-				const transcriptObj = JSON.parse(fs.readFileSync(transcriptDir + transcriptName, 'utf8'));
-				const transcriptText = transcriptObj.fullTextAnnotation.text;
-				noteFilepaths.transcript = transcriptText;
-				noteFilepaths.id = noteID;
-			}
+                if (fs.existsSync(transcriptDir + transcriptName)) {
+                    const transcriptObj = JSON.parse(fs.readFileSync(transcriptDir + transcriptName, 'utf8'));
+                    const transcriptText = transcriptObj.fullTextAnnotation.text;
+                    noteFilepaths.transcript = transcriptText;
+                    noteFilepaths.id = noteID;
+                }
 
-			responseArr.push(noteFilepaths);
-		});
-		res.status(200).json({
+                responseArr.push(noteFilepaths);
+            });
+        }
+		return res.status(200).json({
 			error: null,
 			notes: responseArr
 		});
