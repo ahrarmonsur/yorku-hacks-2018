@@ -11,7 +11,7 @@ const port = 3333;
 const app = express();
 // Set the root directory for the views and public files
 app.use(express.static(path.join(__dirname, 'views')));
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
