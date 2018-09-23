@@ -1,0 +1,52 @@
+body {
+	padding-top: 65px;
+}
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: red;
+  	border-radius: 100%;
+  	display: inline-block;
+
+}
+img {
+	display: inline-block;
+}
+.navbar {
+	border-top: 16px solid #1C3D57;
+}
+
+.navbar-fixed-top .container-fluid {
+	background-color: white; 
+}
+.glyphicon.glyphicon-chevron-left {
+	font-size: 28px;
+	margin-top: 6px;
+	margin-left: 10px;	
+}
+
+.navbar p {
+	font-family: "Playfair Display";
+	font-size: 22px;
+	color: black;
+	margin-top: 6px;
+}
+
+.row span {
+	font-family: "Lucida Sans";
+	font-size: 18px;
+	color: black;
+
+}
+
+p {
+	font-family: "Playfair Display";
+	font-size: 20px;
+	display: inline-block;
+}
+
+#date {
+	font-size: 14px;
+	margin-top: 14px;
+	margin-right: 10px;
+}

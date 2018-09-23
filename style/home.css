@@ -1,3 +1,14 @@
+.navbar {
+	background-color: black;
+}
+body {
+	padding-top: 65px;
+}
+.glyphicon {
+	color: white;
+}
+
+
 .glyphicon.glyphicon-search {
 	font-size: 32px;
 	margin-top: 13px;
@@ -10,14 +21,18 @@
 	font-size: 32px;
 	margin-top: 15px;
 	margin-left: 10px;
-	color: white;
 }
 .glyphicon.glyphicon-search {
 	font-size: 28px;
 	margin-top: 15px;
 	margin-right: 10px;
-	color: white;
 }
+.glyphicon.glyphicon-chevron-left {
+	font-size: 28px;
+	margin-top: 15px;
+	margin-left: 10px;	
+}
+
 .navbar p {
 	font-family: "Playfair Display";
 	font-size: 22px;
@@ -27,9 +42,9 @@
 	margin-left: 8px;
 	margin-top: 14px;
 }
-.navbar {
-	background-color: black;
-}
-body {
-	padding-top: 65px;
+
+#date {
+	font-size: 14px;
+	margin-top: 25px;
+	margin-right: 10px;
 }
