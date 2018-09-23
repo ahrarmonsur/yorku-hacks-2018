@@ -7,22 +7,26 @@
         <link rel="stylesheet" type="text/css" href="../css/homeBody.css">
         <!-- Bootstrap 3: Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery CDN (Bootstrap relies on jQuery) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container-fluid">
-            
             <script>
                 var notes=['note1','note2','note3'];
-                for (var i=0; i<notes.length(); i++){
-                    jQuery('<div/>', {
-                            id: 'some-id',
-                            class: 'some-class',
-                            title: 'now this div has a title!'
-                        }).appendTo('#mySelector');
-                    }
+                function appendContainer(){
+                    var div = document.createElement("div");
+                    div.innerHTML = "Text.";
+                    div.className = "";
+                    $("body").append(div);
+                }
+                //window.onload = appendContainer;
+                for (var i=0; i<notes.length; i++){
+                    appendContainer();
+                }
+                
                 
             </script>
-            
         </div>
     </body>
     
