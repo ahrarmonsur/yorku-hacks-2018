@@ -21,7 +21,7 @@ a:hover {
 .note__box {
     border-bottom: 0.5px solid lightgray;
 }
-.cam__img {	
+.cam__img, #switch_icon {	
     height: 30px;	
     width: auto;	
 }	
@@ -97,7 +97,7 @@ p {
     width: auto;
  }
 
- #cam__button {
+ #cam__button, #swap_button {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -115,11 +115,11 @@ p {
     align-items: center;	
  }
 
- #cam__button:hover {
+ #cam__button:hover, #swap_button {
 
  }
 
- #cam__button:active {
+ #cam__button:active, #swap_button {
 
  }
  
