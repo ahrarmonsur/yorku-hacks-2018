@@ -1,6 +1,22 @@
-.navbar-text {
+.glyphicon.glyphicon-search {
+	font-size: 32px;
+	margin-top: 13px;
+	color: white;
+}
+
+.navbar p {
 	font-family: "Playfair Display";
 	font-size: 22px;
+	color: white;
+}
+
+.navbar button {
+	margin-left: 8px;
+	margin-top: 14px;
+}
+
+.navbar {
+	background-color: black;
 }
 
 body {
