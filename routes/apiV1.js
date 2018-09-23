@@ -16,16 +16,17 @@ function getAllNotes(req, res) {
 		responseArr = []
 		files.forEach(fileName => {
 			let noteFilepaths = { imagePath: fileDir + fileName };
-			const transcriptName = fileName.split('.')[0] + '.json';
-			console.log(transcriptDir + transcriptName);
-			console.log(fs.existsSync(transcriptDir + transcriptName));
+			const noteID = fileName.split('.')[0];
+			const transcriptName = noteID + '.json';
 
 			if (fs.existsSync(transcriptDir + transcriptName)) {
-				noteFilepaths.transcriptPath = transcriptDir + transcriptName;
+				const transcriptObj = JSON.parse(fs.readFileSync(transcriptDir + transcriptName, 'utf8'));
+				const transcriptText = transcriptObj.fullTextAnnotation.text;
+				noteFilepaths.transcript = transcriptText;
+				noteFilepaths.id = noteID;
 			}
 
 			responseArr.push(noteFilepaths);
-			console.log(noteFilepaths);
 		});
 		res.status(200).json({
 			error: null,

@@ -39,3 +39,7 @@ input:focus{
 	width: 100px;
 	height: 100px;
 }
+
+pre {
+	white-space: pre-wrap;
+}

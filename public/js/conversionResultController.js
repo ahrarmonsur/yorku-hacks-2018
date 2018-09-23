@@ -10,7 +10,6 @@
 			method: 'GET',
 			url: '/api/v1/notes/' + noteID,
 		}).done(function(res) {
-			console.log($('#transcript__p'));
 			$('#transcript__p').text(performTextSubstitution(res.transcript));
 		})
 	});
