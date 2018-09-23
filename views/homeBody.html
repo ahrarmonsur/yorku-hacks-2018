@@ -17,20 +17,24 @@
                 function appendContainer(){
                     var div = document.createElement("div");
                     div.className = "panel panel-default";
+                    div.id = "panel";
                     var hdiv = document.createElement("div");
                     hdiv.innerHTML = "This is a title";
                     hdiv.className = "panel-heading";
+                    hdiv.id = "phead";
                     var bdiv = document.createElement("div");
                     bdiv.innerHTML = "This is the body";
                     bdiv.className = "panel-body";
+                    bdiv.id = "pbody";
                     $("body").append(div);
-                    $("div").append(hdiv);
-                    $("div").append(bdiv);
+                    $('#panel').append(hdiv);
+                    $('#panel').append(bdiv);
+                   
                 }
-                window.onload = appendContainer;
-                //for (var i=0; i<notes.length; i++){
-                //    appendContainer();
-                //}
+                //window.onload = appendContainer;
+                for (var i=0; i<notes.length; i++){
+                    appendContainer();
+                }
                 
                 
             </script>
