@@ -1,2 +1,5 @@
+.DS_Store
 .idea/
 node_modules/
+*_gcs_service_key.json
+assets/file_uploads/
