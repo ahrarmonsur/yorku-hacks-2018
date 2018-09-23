@@ -22,11 +22,6 @@ a:hover {
     border-bottom: 0.5px solid lightgray;
 }
 
-.cam__img {
-    height: 30px;
-    width: auto;
-}
-
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 14px;
@@ -57,7 +52,8 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 12px;
-    color: gray;
+    color: black;
+    line-height: 1.8; 
 }
 
 .overview__header {
@@ -107,9 +103,6 @@ p {
     color: white;
     outline: none;
     box-shadow: #999999 0 6px 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
  }
 
  #cam__button:hover {
