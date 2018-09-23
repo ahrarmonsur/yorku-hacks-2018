@@ -17,9 +17,9 @@
                 function appendContainer(){
                     var div = document.createElement("div");
                     div.className = "panel panel-default";
-                    div.id = "panel";
+                    div.id = "panel"+i.toString();
                     var hdiv = document.createElement("div");
-                    hdiv.innerHTML = "This is a title";
+                    hdiv.innerHTML = notes[i];
                     hdiv.className = "panel-heading";
                     hdiv.id = "phead";
                     var bdiv = document.createElement("div");
@@ -27,8 +27,8 @@
                     bdiv.className = "panel-body";
                     bdiv.id = "pbody";
                     $("body").append(div);
-                    $('#panel').append(hdiv);
-                    $('#panel').append(bdiv);
+                    $('#panel'+i.toString()).append(hdiv);
+                    $('#panel'+i.toString()).append(bdiv);
                    
                 }
                 //window.onload = appendContainer;
