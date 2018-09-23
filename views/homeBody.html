@@ -16,14 +16,21 @@
                 var notes=['note1','note2','note3'];
                 function appendContainer(){
                     var div = document.createElement("div");
-                    div.innerHTML = "<h4>Title</h4>";
-                    div.className = "card";
+                    div.className = "panel panel-default";
+                    var hdiv = document.createElement("div");
+                    hdiv.innerHTML = "This is a title";
+                    hdiv.className = "panel-heading";
+                    var bdiv = document.createElement("div");
+                    bdiv.innerHTML = "This is the body";
+                    bdiv.className = "panel-body";
                     $("body").append(div);
+                    $("div").append(hdiv);
+                    $("div").append(bdiv);
                 }
-                //window.onload = appendContainer;
-                for (var i=0; i<notes.length; i++){
-                    appendContainer();
-                }
+                window.onload = appendContainer;
+                //for (var i=0; i<notes.length; i++){
+                //    appendContainer();
+                //}
                 
                 
             </script>
