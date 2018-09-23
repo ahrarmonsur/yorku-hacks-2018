@@ -28,15 +28,23 @@ router.get('/conversion-result',(req, res, next) => {
 
 function relayImageToGoogleVision(req, res, next) {
 	fileFunctions.uploadImageToGoogleVision(req.file.path).then(results => {
-		const fullTextAnnotation = results[0].fullTextAnnotation;
-		console.log(results);
-		console.log(`Full text: ${fullTextAnnotation.text}`);
+		console.log(req.file);
+		const fileName = req.file.filename.split('.')[0];
+		const transcript = results[0];
+
+		// Save a copy of the transcript
+		fs.writeFile('assets/transcripts/' + fileName + '.json', JSON.stringify(transcript), (err) => {
+			// throws an error, you could also catch it here
+			if (err) throw err;
+
+			// success case, the file was saved
+			console.log('Transcript saved!');
+		});
+
+		res.end(transcript.fullTextAnnotation.text);
 	}).catch(err => {
-		console.log(`Error: ${err}`);
-
+		res.end(`Error: ${err}`);
 	});
-
-	res.end('dsafsdf');
 }
 router.post('/handwritten', handwritten_upload, relayImageToGoogleVision);
 
