@@ -59,12 +59,12 @@
     <img id="img_note" src="../asset/images/stars.jpg"
   </div>
 
-  <button id="swap" type="button">swap text and image</button>
+  <button id="swap_button" type="button">swap text and image</button>
 
   <script>
     window.onload = $("#img_note").hide();
     var noteIsText = false;
-    $("#swap").click(function(){
+    $("#swap_button").click(function(){
       if (noteIsText) {
         $("#text_note").hide();
         $("#img_note").show();
